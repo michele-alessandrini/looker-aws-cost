@@ -1,5 +1,5 @@
 view: cost_and_usage {
-  sql_table_name: aws_optimizer.my_cur_report ;;
+  sql_table_name: aws_billing_report.my_cur_report ;;
   suggestions: no
 
   dimension: bill_billing_entity {
