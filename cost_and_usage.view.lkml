@@ -63,7 +63,7 @@ view: cost_and_usage {
   dimension: lineitem_blendedcost {
     hidden: yes
     type: number
-    sql: ${TABLE}.lineitem_blendedcost ;;
+    sql: CAST(${TABLE}.lineitem_blendedcost as double) ;;
   }
 
   dimension: blended_rate {
@@ -179,7 +179,7 @@ view: cost_and_usage {
   dimension: lineitem_unblendedcost {
     type: number
     hidden: yes
-    sql: ${TABLE}.lineitem_unblendedcost ;;
+    sql: CAST(${TABLE}.lineitem_unblendedcost as double) ;;
   }
 
   dimension: unblended_rate {
